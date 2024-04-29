@@ -1,0 +1,93 @@
+@media (max-width: 500px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    .sidebar{
+        display: flex;
+        position: relative;
+        bottom: 0;
+        height: 10vh;
+        width: 100%;
+    }
+
+    .sidebar.active ~ .main-content{
+        left: 0;
+        width: 100%;
+    }
+
+    .sidebar.active{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar #btn{
+        position: none;
+        left: 90%;
+    }
+
+    .sidebar.active #btn{
+        left: 90%;
+    }
+
+    .sidebar ul li{
+        display: none;
+    }
+
+    .sidebar.active ul li{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar .top .logo{
+        opacity: 1;
+        align-items: center;
+    }
+
+    .user{
+        display: flex;
+        align-items:flex-start;
+    }
+
+    .user-img{
+        width: 50px;
+        border-radius: 100%;
+        border: 2px solid #d2d2d2;
+    }
+
+    /* main start */
+
+    .main-content{
+        width: 100%;
+        left: 0;
+    }
+    
+
+    .search-container{
+        width: 80%;
+    }
+
+    .site-search{
+        height: 50px;
+        width: 95%;
+        padding: 0 6px;
+    }
+
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .structuring button{
+        margin-right: 15px;
+        width: 150px;
+    }
+
+    .title{
+        width: 100%;
+    }
+}
